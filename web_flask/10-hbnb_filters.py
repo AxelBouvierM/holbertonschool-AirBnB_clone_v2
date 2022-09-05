@@ -16,7 +16,7 @@ def hbnb_filters():
     states = storage.all("State").values()
     amenity = storage.all("Amenity").values()
 
-    return render_template("6-index.html", states=states, amenities=amenity)
+    return render_template("10-hbnb_filters.html", states=states, amenities=amenity)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
