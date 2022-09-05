@@ -1,15 +1,6 @@
 {% extends 'index.html' %}
 
 {% block body %}
-<! -- 
-    {% if states_l %}
-        <H1>States</H1>
-        <UL>
-            {% for state in states_l | sort(attribute="name") %}
-                <LI>{{ state.id }}: <B>{{ state.name }}</B></LI>
-            {% endfor %}
-        </UL> 
--->
     {% if state %}
         <H1>State: {{ state.name }}</H1>
         <H3>Cities:</H3>
