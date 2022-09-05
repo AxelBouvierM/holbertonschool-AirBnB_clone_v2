@@ -17,7 +17,7 @@ def states():
     List states and storage
     """
     states_l = storage.all("State").values()
-    return render_template("9-states.html", states_l=states_l)
+    return render_template("7-states_list.html", states_l=states_l)
 
 
 @app.route("/states/<id>", strict_slashes=False)
